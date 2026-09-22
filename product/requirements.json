@@ -124,6 +124,18 @@
         "实物稳定性及收纳手感需样件验证"
       ],
       "source": "default"
+    },
+    "forward_top_slope_deg": {
+      "value": 15,
+      "source": "user"
+    },
+    "slope_reference": {
+      "value": "product/references/uploads/20260922T135609685Z-1-mark.png",
+      "source": "user"
+    },
+    "slope_implementation": {
+      "value": "相对水平面，左右深格口沿及隔板分别朝前(-Y、托盘方向)降低，保留55 mm左右高低差；90/145 mm为圆滑后最高点；托盘不变。",
+      "source": "default"
     }
   },
   "open_questions": []

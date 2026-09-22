@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "status": "ready",
-  "requirements_digest": "602b27670e4dd58d31d3ff698b8c6271a7d1d5ae266eb56656dc9994d0b1a8b4",
+  "requirements_digest": "4d244a34fec58830727d04cd525fc9780c52033950cdbfddcdcba15dda9484b4",
   "units": "mm",
   "coordinate_frame": {
     "origin": "底面中心",
@@ -28,7 +28,20 @@
     "rear_outer_front_y_mm": -27.6,
     "left_top_z_mm": 90,
     "right_top_z_mm": 145,
-    "tray_rim_z_mm": 15
+    "tray_rim_z_mm": 15,
+    "top_slope": {
+      "angle_deg": 15,
+      "direction": "front_minus_y",
+      "reference": "horizontal XY",
+      "rear_plane_y_mm": 60,
+      "fillet_crown_compensation_mm": 0.24258029827296462,
+      "plane_equation": "z=zone_max_height + crown_compensation + tan(15deg)*(y-60)",
+      "affected_zones": [
+        "left",
+        "right"
+      ],
+      "tray_unchanged": true
+    }
   },
   "compartments": [
     {
@@ -45,8 +58,13 @@
         40.2
       ],
       "floor_z_mm": 3,
-      "rim_z_mm": 90,
-      "plan_corner_radius_mm": 3
+      "plan_corner_radius_mm": 3,
+      "zone_max_height_mm": 90,
+      "rim_plane_z_range_mm": [
+        67.413309,
+        78.184867
+      ],
+      "rim_note": "斜面方程在净腔体Y边界处的理论高度；圆角边缘略低于理论面。"
     },
     {
       "id": "L_front_2",
@@ -62,8 +80,13 @@
         40.2
       ],
       "floor_z_mm": 3,
-      "rim_z_mm": 90,
-      "plan_corner_radius_mm": 3
+      "plan_corner_radius_mm": 3,
+      "zone_max_height_mm": 90,
+      "rim_plane_z_range_mm": [
+        67.413309,
+        78.184867
+      ],
+      "rim_note": "斜面方程在净腔体Y边界处的理论高度；圆角边缘略低于理论面。"
     },
     {
       "id": "L_back",
@@ -79,8 +102,13 @@
         40.2
       ],
       "floor_z_mm": 3,
-      "rim_z_mm": 90,
-      "plan_corner_radius_mm": 3
+      "plan_corner_radius_mm": 3,
+      "zone_max_height_mm": 90,
+      "rim_plane_z_range_mm": [
+        78.827945,
+        89.599502
+      ],
+      "rim_note": "斜面方程在净腔体Y边界处的理论高度；圆角边缘略低于理论面。"
     },
     {
       "id": "R_middle_1",
@@ -96,8 +124,13 @@
         26.0
       ],
       "floor_z_mm": 3,
-      "rim_z_mm": 145,
-      "plan_corner_radius_mm": 3
+      "plan_corner_radius_mm": 3,
+      "zone_max_height_mm": 145,
+      "rim_plane_z_range_mm": [
+        130.023066,
+        136.989745
+      ],
+      "rim_note": "斜面方程在净腔体Y边界处的理论高度；圆角边缘略低于理论面。"
     },
     {
       "id": "R_middle_2",
@@ -113,8 +146,13 @@
         26.0
       ],
       "floor_z_mm": 3,
-      "rim_z_mm": 145,
-      "plan_corner_radius_mm": 3
+      "plan_corner_radius_mm": 3,
+      "zone_max_height_mm": 145,
+      "rim_plane_z_range_mm": [
+        130.023066,
+        136.989745
+      ],
+      "rim_note": "斜面方程在净腔体Y边界处的理论高度；圆角边缘略低于理论面。"
     },
     {
       "id": "R_back_1",
@@ -130,8 +168,13 @@
         26.0
       ],
       "floor_z_mm": 3,
-      "rim_z_mm": 145,
-      "plan_corner_radius_mm": 3
+      "plan_corner_radius_mm": 3,
+      "zone_max_height_mm": 145,
+      "rim_plane_z_range_mm": [
+        137.632823,
+        144.599502
+      ],
+      "rim_note": "斜面方程在净腔体Y边界处的理论高度；圆角边缘略低于理论面。"
     },
     {
       "id": "R_back_2",
@@ -147,8 +190,13 @@
         26.0
       ],
       "floor_z_mm": 3,
-      "rim_z_mm": 145,
-      "plan_corner_radius_mm": 3
+      "plan_corner_radius_mm": 3,
+      "zone_max_height_mm": 145,
+      "rim_plane_z_range_mm": [
+        137.632823,
+        144.599502
+      ],
+      "rim_note": "斜面方程在净腔体Y边界处的理论高度；圆角边缘略低于理论面。"
     },
     {
       "id": "R_front_1",
@@ -164,8 +212,13 @@
         26.0
       ],
       "floor_z_mm": 3,
-      "rim_z_mm": 145,
-      "plan_corner_radius_mm": 3
+      "plan_corner_radius_mm": 3,
+      "zone_max_height_mm": 145,
+      "rim_plane_z_range_mm": [
+        122.413309,
+        129.379988
+      ],
+      "rim_note": "斜面方程在净腔体Y边界处的理论高度；圆角边缘略低于理论面。"
     },
     {
       "id": "R_front_2",
@@ -181,8 +234,13 @@
         26.0
       ],
       "floor_z_mm": 3,
-      "rim_z_mm": 145,
-      "plan_corner_radius_mm": 3
+      "plan_corner_radius_mm": 3,
+      "zone_max_height_mm": 145,
+      "rim_plane_z_range_mm": [
+        122.413309,
+        129.379988
+      ],
+      "rim_note": "斜面方程在净腔体Y边界处的理论高度；圆角边缘略低于理论面。"
     },
     {
       "id": "R_front_3",
@@ -198,8 +256,13 @@
         26.0
       ],
       "floor_z_mm": 3,
-      "rim_z_mm": 145,
-      "plan_corner_radius_mm": 3
+      "plan_corner_radius_mm": 3,
+      "zone_max_height_mm": 145,
+      "rim_plane_z_range_mm": [
+        122.413309,
+        129.379988
+      ],
+      "rim_note": "斜面方程在净腔体Y边界处的理论高度；圆角边缘略低于理论面。"
     },
     {
       "id": "R_front_slot",
@@ -215,8 +278,13 @@
         26.0
       ],
       "floor_z_mm": 3,
-      "rim_z_mm": 145,
-      "plan_corner_radius_mm": 3
+      "plan_corner_radius_mm": 3,
+      "zone_max_height_mm": 145,
+      "rim_plane_z_range_mm": [
+        122.413309,
+        129.379988
+      ],
+      "rim_note": "斜面方程在净腔体Y边界处的理论高度；圆角边缘略低于理论面。"
     },
     {
       "id": "tray_left",

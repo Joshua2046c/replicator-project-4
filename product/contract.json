@@ -10,12 +10,22 @@
       "source": "user_requested",
       "description": "笔筒造型参考照片，无比例尺，仅用于视觉方向，不作为精确尺寸证据。",
       "path": "product/references/uploads/20260922T130920718Z-1-image.png"
+    },
+    {
+      "id": "user_slope_reference",
+      "source": "user_requested",
+      "description": "用户圈定左右深格顶部，要求朝前约15°斜切。",
+      "path": "product/references/uploads/20260922T135609685Z-1-mark.png"
     }
   ],
   "assembly_story": {
     "installation": "一体式笔筒底面直接放置桌面，无装配或固定五金。",
     "maintenance": "从顶部清理收纳格和前方托盘。",
-    "user_access": ["左侧低区收纳格", "右侧高区收纳格", "前方浅托盘"]
+    "user_access": [
+      "左侧低区收纳格",
+      "右侧高区收纳格",
+      "前方浅托盘"
+    ]
   },
   "cad": {
     "requirement": "required",
@@ -25,9 +35,14 @@
         "design_id": "pen-organizer",
         "description": "一体式圆角阶梯分格桌面笔筒",
         "delivery_target": "printable_part",
-        "required_formats": ["step"],
+        "required_formats": [
+          "step"
+        ],
         "interface_ids": [],
-        "reference_ids": ["user_style_reference"]
+        "reference_ids": [
+          "user_style_reference",
+          "user_slope_reference"
+        ]
       }
     ]
   },

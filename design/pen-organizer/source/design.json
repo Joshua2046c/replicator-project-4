@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "buildNumber": 1,
-  "sourceHash": "dbfe12eb1cc5ff06a8e96ce3776534ed2ed58ae27424814381242cb55a8baa75",
+  "buildNumber": 2,
+  "sourceHash": "c018b22dccd7d36bcb74d08ccf243eb52dfbba1ea356bc74e89f20a581a46c60",
   "units": "mm",
   "coordinateFrame": "replicator-world-z-up",
   "targets": [
@@ -14,7 +14,7 @@
           "target": "organizer",
           "order": 0,
           "path": "design/pen-organizer/source/parts/organizer/000-organizer.py",
-          "sha256": "bc6177b58d128ed3d3c2d2684f43fcaeffeba37d27e46e495f1c3ad60bdcfb2a"
+          "sha256": "1a7a9d6419f77a873388200a3118faad253f32aaa6df0bdb960095e923624fab"
         }
       ],
       "dependencies": []
@@ -26,7 +26,7 @@
       "target": "organizer",
       "label": "阶梯分格笔筒",
       "kind": "generated",
-      "shapeHash": "b15e94a51fabf3cbfa1e425fa28bcbac745857e32b0fdab59bb019f176f08e9d",
+      "shapeHash": "874eb5a9b60967a55c3a642938490820faf8eb8358f71b4734792208678cdd27",
       "transform": {
         "positionMm": [
           0,
@@ -50,7 +50,7 @@
   ],
   "assets": [],
   "fits": [],
-  "updatedAt": "2026-09-22T13:38:58.298Z",
+  "updatedAt": "2026-09-22T13:58:47.299Z",
   "parameters": {
     "organizer": {
       "organizer_width": 220,
@@ -72,7 +72,8 @@
       "organizer_right_middle_remaining_fraction": 0.5,
       "organizer_right_middle_split": 0.5,
       "organizer_right_back_split": 0.5,
-      "organizer_slot_width": 18
+      "organizer_slot_width": 18,
+      "organizer_forward_slope_deg": 15
     }
   }
 }
