@@ -1,0 +1,35 @@
+{
+  "version": 2,
+  "artifact_level": "standalone_part",
+  "deliverable_intent": "printable_part",
+  "summary": "参考用户图片的一体式阶梯多格桌面笔筒，左低右高，前置浅托盘；默认220×120×145 mm，最终CAD交付STEP。",
+  "required_interfaces": [],
+  "external_references": [
+    {
+      "id": "user_style_reference",
+      "source": "user_requested",
+      "description": "笔筒造型参考照片，无比例尺，仅用于视觉方向，不作为精确尺寸证据。",
+      "path": "product/references/uploads/20260922T130920718Z-1-image.png"
+    }
+  ],
+  "assembly_story": {
+    "installation": "一体式笔筒底面直接放置桌面，无装配或固定五金。",
+    "maintenance": "从顶部清理收纳格和前方托盘。",
+    "user_access": ["左侧低区收纳格", "右侧高区收纳格", "前方浅托盘"]
+  },
+  "cad": {
+    "requirement": "required",
+    "designs": [
+      {
+        "role": "desktop_pen_organizer",
+        "design_id": "pen-organizer",
+        "description": "一体式圆角阶梯分格桌面笔筒",
+        "delivery_target": "printable_part",
+        "required_formats": ["step"],
+        "interface_ids": [],
+        "reference_ids": ["user_style_reference"]
+      }
+    ]
+  },
+  "open_questions": []
+}
