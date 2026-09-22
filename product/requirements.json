@@ -1,25 +1,130 @@
 {
   "requirements": {
-    "product_goal": {"value": "按上传参考图制作桌面笔筒", "source": "user"},
-    "reference_image": {"value": "product/references/uploads/20260922T130920718Z-1-image.png", "source": "user"},
-    "product_class": {"value": "mechanical", "source": "default"},
-    "visual_features": {"value": ["左低右高", "顶部圆角多分格", "前方低边沿浅托盘", "浅色颗粒外观"], "source": "research"},
-    "envelope_mm": {"value": {"width": 220, "depth": 120, "height": 145}, "source": "default"},
-    "tier_heights_mm": {"value": {"left": 90, "right": 145}, "source": "default"},
-    "tier_width_fraction": {"value": {"left": 0.44, "right": 0.56}, "source": "default"},
-    "left_compartments": {"value": {"back_row": 1, "front_row": 2}, "source": "default"},
-    "right_compartments": {"value": {"back_row": 2, "middle_row": 2, "front_row": 4, "narrow_slot": "front_right"}, "source": "default"},
-    "front_tray": {"value": {"clear_depth_mm": 30, "rim_top_height_mm": 15, "compartments": 2}, "source": "default"},
-    "wall_thickness_mm": {"value": 2.4, "source": "default"},
-    "floor_thickness_mm": {"value": 3, "source": "default"},
-    "corner_radii_mm": {"value": {"outer_plan": 5, "inner_plan": 3, "rim_target": 0.8}, "source": "default"},
-    "storage_clearance_targets_mm": {"value": {"minimum_compartment_width": 12, "left_large_opening_minimum": [70, 25]}, "source": "default"},
-    "construction": {"value": "一体式、所有格封底、平底，无独立紧固件及电子部件", "source": "default"},
-    "manufacturing_method": {"value": "fdm", "source": "default"},
-    "material": {"value": "PLA原型", "source": "default"},
-    "finish": {"value": "米白或浅灰白，颗粒效果通过材料或表面处理表达，不建模微粒", "source": "default"},
-    "use_scope": {"value": "室内桌面文具收纳，不作为食品接触或防水容器", "source": "default"},
-    "acceptance": {"value": ["保留参考图阶梯式轮廓", "11个收纳格及2个浅托盘格", "CAD包络和壁底厚符合默认目标", "无设计锐角、底面连续", "CAD有效实体及主要尺寸可调整", "STEP与最终检查模型一致", "实物稳定性及收纳手感需样件验证"], "source": "default"}
+    "product_goal": {
+      "value": "按上传参考图制作桌面笔筒",
+      "source": "user"
+    },
+    "reference_image": {
+      "value": "product/references/uploads/20260922T130920718Z-1-image.png",
+      "source": "user"
+    },
+    "product_class": {
+      "value": "mechanical",
+      "source": "default"
+    },
+    "visual_features": {
+      "value": [
+        "左低右高",
+        "顶部圆角多分格",
+        "前方低边沿浅托盘",
+        "浅色颗粒外观"
+      ],
+      "source": "research"
+    },
+    "envelope_mm": {
+      "value": {
+        "width": 220,
+        "depth": 120,
+        "height": 145
+      },
+      "source": "user"
+    },
+    "tier_heights_mm": {
+      "value": {
+        "left": 90,
+        "right": 145
+      },
+      "source": "user"
+    },
+    "tier_width_fraction": {
+      "value": {
+        "left": 0.44,
+        "right": 0.56
+      },
+      "source": "user"
+    },
+    "left_compartments": {
+      "value": {
+        "back_row": 1,
+        "front_row": 2
+      },
+      "source": "default"
+    },
+    "right_compartments": {
+      "value": {
+        "back_row": 2,
+        "middle_row": 2,
+        "front_row": 4,
+        "narrow_slot": "front_right"
+      },
+      "source": "default"
+    },
+    "front_tray": {
+      "value": {
+        "clear_depth_mm": 30,
+        "rim_top_height_mm": 15,
+        "compartments": 2
+      },
+      "source": "user"
+    },
+    "wall_thickness_mm": {
+      "value": 2.4,
+      "source": "user"
+    },
+    "floor_thickness_mm": {
+      "value": 3,
+      "source": "user"
+    },
+    "corner_radii_mm": {
+      "value": {
+        "outer_plan": 5,
+        "inner_plan": 3,
+        "rim_target": 0.8
+      },
+      "source": "user"
+    },
+    "storage_clearance_targets_mm": {
+      "value": {
+        "minimum_compartment_width": 12,
+        "left_large_opening_minimum": [
+          70,
+          25
+        ]
+      },
+      "source": "user"
+    },
+    "construction": {
+      "value": "一体式、所有格封底、平底，无独立紧固件及电子部件",
+      "source": "default"
+    },
+    "manufacturing_method": {
+      "value": "fdm",
+      "source": "default"
+    },
+    "material": {
+      "value": "PLA原型",
+      "source": "default"
+    },
+    "finish": {
+      "value": "米白或浅灰白，颗粒效果通过材料或表面处理表达，不建模微粒",
+      "source": "default"
+    },
+    "use_scope": {
+      "value": "室内桌面文具收纳，不作为食品接触或防水容器",
+      "source": "default"
+    },
+    "acceptance": {
+      "value": [
+        "保留参考图阶梯式轮廓",
+        "11个收纳格及2个浅托盘格",
+        "CAD包络和壁底厚符合默认目标",
+        "无设计锐角、底面连续",
+        "CAD有效实体及主要尺寸可调整",
+        "STEP与最终检查模型一致",
+        "实物稳定性及收纳手感需样件验证"
+      ],
+      "source": "default"
+    }
   },
   "open_questions": []
 }

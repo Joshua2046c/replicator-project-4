@@ -1,0 +1,290 @@
+{
+  "schema_version": 1,
+  "status": "ready",
+  "requirements_digest": "602b27670e4dd58d31d3ff698b8c6271a7d1d5ae266eb56656dc9994d0b1a8b4",
+  "units": "mm",
+  "coordinate_frame": {
+    "origin": "底面中心",
+    "x": "向右",
+    "y": "向后",
+    "z": "向上"
+  },
+  "envelope_mm": {
+    "width": 220.0,
+    "depth": 120.0,
+    "height": 145
+  },
+  "structure": {
+    "quantity": 1,
+    "object_id": "organizer",
+    "construction": "single_fused_solid",
+    "wall_thickness_mm": 2.4,
+    "floor_thickness_mm": 3,
+    "outer_plan_radius_mm": 5,
+    "inner_plan_radius_mm": 3,
+    "rim_fillet_radius_mm": 0.8,
+    "bottom_edge_chamfer_mm": 0.4,
+    "tier_split_center_x_mm": -12.768,
+    "rear_outer_front_y_mm": -27.6,
+    "left_top_z_mm": 90,
+    "right_top_z_mm": 145,
+    "tray_rim_z_mm": 15
+  },
+  "compartments": [
+    {
+      "id": "L_front_1",
+      "zone": "left",
+      "clear_bounds_mm": {
+        "x_min": -107.6,
+        "x_max": -61.984,
+        "y_min": -25.2,
+        "y_max": 15.0
+      },
+      "clear_size_mm": [
+        45.616,
+        40.2
+      ],
+      "floor_z_mm": 3,
+      "rim_z_mm": 90,
+      "plan_corner_radius_mm": 3
+    },
+    {
+      "id": "L_front_2",
+      "zone": "left",
+      "clear_bounds_mm": {
+        "x_min": -59.584,
+        "x_max": -13.968,
+        "y_min": -25.2,
+        "y_max": 15.0
+      },
+      "clear_size_mm": [
+        45.616,
+        40.2
+      ],
+      "floor_z_mm": 3,
+      "rim_z_mm": 90,
+      "plan_corner_radius_mm": 3
+    },
+    {
+      "id": "L_back",
+      "zone": "left",
+      "clear_bounds_mm": {
+        "x_min": -107.6,
+        "x_max": -13.968,
+        "y_min": 17.4,
+        "y_max": 57.6
+      },
+      "clear_size_mm": [
+        93.632,
+        40.2
+      ],
+      "floor_z_mm": 3,
+      "rim_z_mm": 90,
+      "plan_corner_radius_mm": 3
+    },
+    {
+      "id": "R_middle_1",
+      "zone": "right",
+      "clear_bounds_mm": {
+        "x_min": -11.568,
+        "x_max": 46.816,
+        "y_min": 3.2,
+        "y_max": 29.2
+      },
+      "clear_size_mm": [
+        58.384,
+        26.0
+      ],
+      "floor_z_mm": 3,
+      "rim_z_mm": 145,
+      "plan_corner_radius_mm": 3
+    },
+    {
+      "id": "R_middle_2",
+      "zone": "right",
+      "clear_bounds_mm": {
+        "x_min": 49.216,
+        "x_max": 107.6,
+        "y_min": 3.2,
+        "y_max": 29.2
+      },
+      "clear_size_mm": [
+        58.384,
+        26.0
+      ],
+      "floor_z_mm": 3,
+      "rim_z_mm": 145,
+      "plan_corner_radius_mm": 3
+    },
+    {
+      "id": "R_back_1",
+      "zone": "right",
+      "clear_bounds_mm": {
+        "x_min": -11.568,
+        "x_max": 46.816,
+        "y_min": 31.6,
+        "y_max": 57.6
+      },
+      "clear_size_mm": [
+        58.384,
+        26.0
+      ],
+      "floor_z_mm": 3,
+      "rim_z_mm": 145,
+      "plan_corner_radius_mm": 3
+    },
+    {
+      "id": "R_back_2",
+      "zone": "right",
+      "clear_bounds_mm": {
+        "x_min": 49.216,
+        "x_max": 107.6,
+        "y_min": 31.6,
+        "y_max": 57.6
+      },
+      "clear_size_mm": [
+        58.384,
+        26.0
+      ],
+      "floor_z_mm": 3,
+      "rim_z_mm": 145,
+      "plan_corner_radius_mm": 3
+    },
+    {
+      "id": "R_front_1",
+      "zone": "right",
+      "clear_bounds_mm": {
+        "x_min": -11.568,
+        "x_max": 19.754667,
+        "y_min": -25.2,
+        "y_max": 0.8
+      },
+      "clear_size_mm": [
+        31.322667,
+        26.0
+      ],
+      "floor_z_mm": 3,
+      "rim_z_mm": 145,
+      "plan_corner_radius_mm": 3
+    },
+    {
+      "id": "R_front_2",
+      "zone": "right",
+      "clear_bounds_mm": {
+        "x_min": 22.154667,
+        "x_max": 53.477333,
+        "y_min": -25.2,
+        "y_max": 0.8
+      },
+      "clear_size_mm": [
+        31.322667,
+        26.0
+      ],
+      "floor_z_mm": 3,
+      "rim_z_mm": 145,
+      "plan_corner_radius_mm": 3
+    },
+    {
+      "id": "R_front_3",
+      "zone": "right",
+      "clear_bounds_mm": {
+        "x_min": 55.877333,
+        "x_max": 87.2,
+        "y_min": -25.2,
+        "y_max": 0.8
+      },
+      "clear_size_mm": [
+        31.322667,
+        26.0
+      ],
+      "floor_z_mm": 3,
+      "rim_z_mm": 145,
+      "plan_corner_radius_mm": 3
+    },
+    {
+      "id": "R_front_slot",
+      "zone": "right",
+      "clear_bounds_mm": {
+        "x_min": 89.6,
+        "x_max": 107.6,
+        "y_min": -25.2,
+        "y_max": 0.8
+      },
+      "clear_size_mm": [
+        18,
+        26.0
+      ],
+      "floor_z_mm": 3,
+      "rim_z_mm": 145,
+      "plan_corner_radius_mm": 3
+    },
+    {
+      "id": "tray_left",
+      "zone": "tray",
+      "clear_bounds_mm": {
+        "x_min": -107.6,
+        "x_max": -13.968,
+        "y_min": -57.6,
+        "y_max": -27.6
+      },
+      "clear_size_mm": [
+        93.632,
+        30
+      ],
+      "floor_z_mm": 3,
+      "rim_z_mm": 15,
+      "plan_corner_radius_mm": 3
+    },
+    {
+      "id": "tray_right",
+      "zone": "tray",
+      "clear_bounds_mm": {
+        "x_min": -11.568,
+        "x_max": 107.6,
+        "y_min": -57.6,
+        "y_max": -27.6
+      },
+      "clear_size_mm": [
+        119.168,
+        30
+      ],
+      "floor_z_mm": 3,
+      "rim_z_mm": 15,
+      "plan_corner_radius_mm": 3
+    }
+  ],
+  "implementation_defaults": {
+    "source": "default",
+    "left_row_clear_depths_equal": true,
+    "right_row_clear_depths_equal": true,
+    "left_front_widths_equal": true,
+    "right_middle_and_back_widths_equal": true,
+    "right_front_first_three_widths_equal": true,
+    "right_front_slot_clear_width_mm": 18,
+    "bottom_edge_chamfer_mm": 0.4
+  },
+  "interfaces": [],
+  "connections": [],
+  "external_parts": [],
+  "manufacturing": {
+    "method": "fdm",
+    "material": "PLA",
+    "orientation": "z=0底面朝下，开口朝上",
+    "supports": "几何避免大跨度顶盖；实际是否需要支撑由切片预览确认。",
+    "printer_profile": "not_selected",
+    "surface_texture": "不在实体中建模颗粒"
+  },
+  "risks": [
+    {
+      "id": "physical_test",
+      "severity": "advisory",
+      "description": "未打印；实际收纳适配和装满文具后的稳定性待样件检查。"
+    },
+    {
+      "id": "small_corner_wall",
+      "severity": "advisory",
+      "description": "平面R5外角/R3内角使圆角局部厚于直壁；2.4 mm是直壁标称值，口沿R0.8处有圆滑收薄。"
+    }
+  ],
+  "unresolved_items": []
+}

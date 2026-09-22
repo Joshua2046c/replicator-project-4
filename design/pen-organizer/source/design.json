@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "buildNumber": 1,
+  "sourceHash": "dbfe12eb1cc5ff06a8e96ce3776534ed2ed58ae27424814381242cb55a8baa75",
+  "units": "mm",
+  "coordinateFrame": "replicator-world-z-up",
+  "targets": [
+    {
+      "id": "organizer",
+      "label": "organizer",
+      "cells": [
+        {
+          "id": "organizer",
+          "target": "organizer",
+          "order": 0,
+          "path": "design/pen-organizer/source/parts/organizer/000-organizer.py",
+          "sha256": "bc6177b58d128ed3d3c2d2684f43fcaeffeba37d27e46e495f1c3ad60bdcfb2a"
+        }
+      ],
+      "dependencies": []
+    }
+  ],
+  "objects": [
+    {
+      "id": "organizer",
+      "target": "organizer",
+      "label": "阶梯分格笔筒",
+      "kind": "generated",
+      "shapeHash": "b15e94a51fabf3cbfa1e425fa28bcbac745857e32b0fdab59bb019f176f08e9d",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    }
+  ],
+  "assets": [],
+  "fits": [],
+  "updatedAt": "2026-09-22T13:38:58.298Z",
+  "parameters": {
+    "organizer": {
+      "organizer_width": 220,
+      "organizer_depth": 120,
+      "organizer_height": 145,
+      "organizer_left_height": 90,
+      "organizer_wall": 2.4,
+      "organizer_floor": 3,
+      "organizer_left_fraction": 0.44,
+      "organizer_tray_clear_depth": 30,
+      "organizer_tray_height": 15,
+      "organizer_outer_radius": 5,
+      "organizer_inner_radius": 3,
+      "organizer_rim_radius": 0.8,
+      "organizer_bottom_chamfer": 0.4,
+      "organizer_left_front_row_fraction": 0.5,
+      "organizer_left_front_split": 0.5,
+      "organizer_right_front_row_fraction": 0.3333333333333333,
+      "organizer_right_middle_remaining_fraction": 0.5,
+      "organizer_right_middle_split": 0.5,
+      "organizer_right_back_split": 0.5,
+      "organizer_slot_width": 18
+    }
+  }
+}

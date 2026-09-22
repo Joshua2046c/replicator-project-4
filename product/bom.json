@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "status": "ready",
+  "bom_ready": true,
+  "requirements_digest": "602b27670e4dd58d31d3ff698b8c6271a7d1d5ae266eb56656dc9994d0b1a8b4",
+  "items": [
+    {
+      "id": "organizer",
+      "role": "mechanical_body",
+      "name": "一体式阶梯分格笔筒",
+      "description": "220×120×145 mm；左高90 mm；11个深格及2个浅托盘格；2.4 mm标称壁厚，3 mm底板；自定义FDM PLA原型零件。",
+      "quantity": 1,
+      "manufacturer": "Project custom",
+      "part_number": "pen-organizer-body-v1",
+      "source": "default",
+      "selection_reason": "用户采用原定尺寸；全部收纳格和底座融合为一个零件，无需购买五金或电子件。",
+      "cad_relevance": "唯一CAD实体，完整分格坐标见product/constraints.json。",
+      "part_identity": "524928483eb1a165"
+    }
+  ],
+  "unresolved_items": [],
+  "supply_risks": [
+    {
+      "id": "prototype_validation",
+      "severity": "advisory",
+      "description": "打印机、耗材品牌和工艺尚未指定；打印后的平整度、稳定性和手感需样件确认，不影响CAD结构定义。"
+    }
+  ]
+}
