@@ -169,6 +169,21 @@
     "insert_depth_mm": {
       "value": 80,
       "source": "default"
+    },
+    "rounded_tier_transition": {
+      "value": "外托座高低交界按标记改为两端圆滑的斜切过渡，前面和背面均处理；内胆不改。",
+      "source": "user"
+    },
+    "transition_reference": {
+      "value": "product/references/uploads/20260923T111011740Z-1-mark.png",
+      "source": "user"
+    },
+    "transition_profile_mm": {
+      "value": {
+        "horizontal_run": 55,
+        "end_blend_radius": 10
+      },
+      "source": "default"
     }
   },
   "open_questions": []

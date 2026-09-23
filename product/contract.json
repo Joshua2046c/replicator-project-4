@@ -2,7 +2,7 @@
   "version": 2,
   "artifact_level": "assembly",
   "deliverable_intent": "printable_part",
-  "summary": "三件式15°斜口笔筒，补齐外托座阶梯前壁；后部共用腔无左右分隔，两内胆可独立取出，前方30 mm浅托盘。220×120×145 mm。",
+  "summary": "三件式15°斜口笔筒，补齐外托座阶梯前壁；后部共用腔无左右分隔，两内胆可独立取出，前方30 mm浅托盘。220×120×145 mm。 前后高低交界采用圆弧斜坡过渡。",
   "required_interfaces": [
     {
       "id": "left_drop_in",
@@ -43,6 +43,12 @@
       "source": "user_requested",
       "description": "标记内胆前方，要求补上外壁。",
       "path": "product/references/uploads/20260923T105511576Z-1-mark.png"
+    },
+    {
+      "id": "user_transition_reference",
+      "source": "user_requested",
+      "description": "高低交界圆角斜切，背面同样处理。",
+      "path": "product/references/uploads/20260923T111011740Z-1-mark.png"
     }
   ],
   "assembly_story": {
@@ -72,7 +78,8 @@
           "user_style_reference",
           "user_slope_reference",
           "user_removable_reference",
-          "user_front_wall_reference"
+          "user_front_wall_reference",
+          "user_transition_reference"
         ]
       }
     ]

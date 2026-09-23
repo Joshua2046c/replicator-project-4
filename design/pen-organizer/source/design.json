@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "buildNumber": 14,
-  "sourceHash": "dbf175e1cbba801c594e38043189c2b609c0d5abf81b8bf77537e20fa874dfeb",
+  "buildNumber": 15,
+  "sourceHash": "e276a2337bbf1f7f852f062a37f4b1b9beff9390d8f5c8413a6d83f776d89dde",
   "units": "mm",
   "coordinateFrame": "replicator-world-z-up",
   "targets": [
@@ -14,7 +14,7 @@
           "target": "organizer",
           "order": 0,
           "path": "design/pen-organizer/source/parts/organizer/000-organizer.py",
-          "sha256": "1c86c750820d7f22c616a241b288ff739dc91bee96937b3660addcdfc3bdacdf"
+          "sha256": "347a793f6911bcaa7e0d2e42da2c4e5fdf4e567a07d24daa2d5de34135a325a7"
         }
       ],
       "dependencies": []
@@ -52,9 +52,9 @@
     {
       "id": "organizer",
       "target": "organizer",
-      "label": "阶梯包围外托座",
+      "label": "圆弧斜坡外托座",
       "kind": "generated",
-      "shapeHash": "6cbc83e232042a5c5138ee6aec263d7a6c7bd7857b2e1a4d37e12b3f5b736655",
+      "shapeHash": "84596a67683542a9f03a029fa1c4c1c2936b09c9604812bd4f65672b590933b0",
       "transform": {
         "positionMm": [
           0,
@@ -130,7 +130,7 @@
   ],
   "assets": [],
   "fits": [],
-  "updatedAt": "2026-09-23T11:00:53.346Z",
+  "updatedAt": "2026-09-23T11:12:13.648Z",
   "parameters": {
     "organizer": {
       "organizer_width": 220,
@@ -150,7 +150,9 @@
       "organizer_grip_exposure": 12,
       "organizer_side_clearance": 0.5,
       "organizer_insert_gap": 0.8,
-      "organizer_front_clearance": 0.5
+      "organizer_front_clearance": 0.5,
+      "organizer_transition_width": 55,
+      "organizer_transition_radius": 10
     },
     "left_insert": {
       "left_insert_width": 93.368,

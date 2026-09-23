@@ -2,18 +2,18 @@
   "schema_version": 1,
   "status": "ready",
   "bom_ready": true,
-  "requirements_digest": "3ab13f4140e76d01ef49387c4ac98cb5b7f8ffe7b519e93f01bbea0b176a009a",
+  "requirements_digest": "7dc79cf535047aa61b164a317cb3b64cccbd60cb4ca8687436f2f79afd1dff51",
   "items": [
     {
       "id": "organizer",
       "role": "mechanical_part",
-      "name": "阶梯包围整体外托座",
-      "description": "220×120×133 mm；前托盘净深30 mm、前沿15 mm。后部共用腔214×81 mm，无左右隔板；补齐3 mm阶梯前外壁，与底座侧后壁连成一件。",
+      "name": "圆弧斜坡整体外托座",
+      "description": "220×120×133 mm；前托盘净深30 mm、前沿15 mm。后部共用腔214×81 mm，无左右隔板；补齐3 mm阶梯前外壁，与底座侧后壁连成一件。 前后高低交界为55 mm横向跨度的斜坡，两端轮廓圆弧R10，口沿R0.8。",
       "quantity": 1,
       "manufacturer": "Project custom",
       "part_number": "pen-organizer-organizer-nested-v1",
       "source": "default",
-      "selection_reason": "按标记补齐外托座前壁；保持30 mm浅托盘和整体外形，内胆默认深度改80 mm，三件独立打印、无五金。",
+      "selection_reason": "按用户前后圆角斜切标记修改外壁轮廓，内胆尺寸及定位不变。",
       "cad_relevance": "organizer",
       "part_identity": "c279bc31aff8528f"
     },
