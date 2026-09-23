@@ -2,18 +2,18 @@
   "schema_version": 1,
   "status": "ready",
   "bom_ready": true,
-  "requirements_digest": "4f867034e41f7f4003395186effe5e0f370fe5568c4cc669668d34f5eb0270ae",
+  "requirements_digest": "3ab13f4140e76d01ef49387c4ac98cb5b7f8ffe7b519e93f01bbea0b176a009a",
   "items": [
     {
       "id": "organizer",
       "role": "mechanical_part",
-      "name": "无隔断整体外托座",
-      "description": "220×120 mm占地，前沿15 mm，后部左右支撑最高78/133 mm，3 mm壁及底；单一连通内腔214×114 mm。",
+      "name": "阶梯包围整体外托座",
+      "description": "220×120×133 mm；前托盘净深30 mm、前沿15 mm。后部共用腔214×81 mm，无左右隔板；补齐3 mm阶梯前外壁，与底座侧后壁连成一件。",
       "quantity": 1,
       "manufacturer": "Project custom",
       "part_number": "pen-organizer-organizer-nested-v1",
       "source": "default",
-      "selection_reason": "按用户要求改为可拆套层分件；自定义打印件，无外购五金。",
+      "selection_reason": "按标记补齐外托座前壁；保持30 mm浅托盘和整体外形，内胆默认深度改80 mm，三件独立打印、无五金。",
       "cad_relevance": "organizer",
       "part_identity": "c279bc31aff8528f"
     },
@@ -21,12 +21,12 @@
       "id": "left_insert",
       "role": "mechanical_part",
       "name": "左侧三格可取出内胆",
-      "description": "外包络93.368×83.5×87 mm，3 mm壁底，15°斜口；装配底部z=3，最高z=90。",
+      "description": "外包络93.368×80×87 mm，3 mm壁底，15°斜口；装配底部z=3，最高z=90。",
       "quantity": 1,
       "manufacturer": "Project custom",
       "part_number": "pen-organizer-left_insert-nested-v1",
       "source": "default",
-      "selection_reason": "按用户要求改为可拆套层分件；自定义打印件，无外购五金。",
+      "selection_reason": "按标记补齐外托座前壁；保持30 mm浅托盘和整体外形，内胆默认深度改80 mm，三件独立打印、无五金。",
       "cad_relevance": "left_insert",
       "part_identity": "a8149cc48eed7d9f"
     },
@@ -34,12 +34,12 @@
       "id": "right_insert",
       "role": "mechanical_part",
       "name": "右侧八格可取出内胆",
-      "description": "外包络118.832×83.5×142 mm，3 mm壁底，15°斜口，前右净宽18 mm；装配底部z=3，最高z=145。",
+      "description": "外包络118.832×80×142 mm，3 mm壁底，15°斜口，前右净宽18 mm；装配底部z=3，最高z=145。",
       "quantity": 1,
       "manufacturer": "Project custom",
       "part_number": "pen-organizer-right_insert-nested-v1",
       "source": "default",
-      "selection_reason": "按用户要求改为可拆套层分件；自定义打印件，无外购五金。",
+      "selection_reason": "按标记补齐外托座前壁；保持30 mm浅托盘和整体外形，内胆默认深度改80 mm，三件独立打印、无五金。",
       "cad_relevance": "right_insert",
       "part_identity": "aec17f1c6863582c"
     }
@@ -49,7 +49,7 @@
     {
       "id": "fit_test",
       "severity": "advisory",
-      "description": "间隙为原型默认值，需实际打印验证。无锁止机构，移动整件请托住底座；内胆可向前滑动。"
+      "description": "前后侧隙0.5 mm为默认值，需实物验证；前外壁限制前滑，但没有向上锁止，搬动整件仍须托住底座。"
     }
   ]
 }

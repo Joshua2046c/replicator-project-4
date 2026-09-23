@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "status": "ready",
-  "requirements_digest": "4f867034e41f7f4003395186effe5e0f370fe5568c4cc669668d34f5eb0270ae",
+  "requirements_digest": "3ab13f4140e76d01ef49387c4ac98cb5b7f8ffe7b519e93f01bbea0b176a009a",
   "units": "mm",
   "coordinate_frame": {
     "origin": "外托座底面中心",
@@ -29,22 +29,23 @@
       ],
       "cavity_clear_mm": [
         214,
-        114
+        81
       ],
       "floor_mm": 3,
       "wall_mm": 3,
-      "compartments": 1
+      "compartments": 2,
+      "compartment_description": "后部单一内胆共用腔，加前部一个连通浅托盘；无左右隔板"
     },
     {
       "object_id": "left_insert",
       "bbox_size_mm": [
         93.368,
-        83.5,
+        80,
         87
       ],
       "position_mm": [
         -59.816,
-        14.75,
+        16.5,
         3
       ],
       "floor_mm": 3,
@@ -55,12 +56,12 @@
       "object_id": "right_insert",
       "bbox_size_mm": [
         118.832,
-        83.5,
+        80,
         142
       ],
       "position_mm": [
         47.084,
-        14.75,
+        16.5,
         3
       ],
       "floor_mm": 3,
@@ -78,7 +79,8 @@
       "support_z_mm": 3,
       "side_and_back_gap_mm": 0.5,
       "withdrawal": "positive_z",
-      "locking": false
+      "locking": false,
+      "front_gap_mm": 0.5
     },
     {
       "id": "right_drop_in",
@@ -89,7 +91,8 @@
       "support_z_mm": 3,
       "side_and_back_gap_mm": 0.5,
       "withdrawal": "positive_z",
-      "locking": false
+      "locking": false,
+      "front_gap_mm": 0.5
     }
   ],
   "connections": [
@@ -102,7 +105,8 @@
       "support_z_mm": 3,
       "side_and_back_gap_mm": 0.5,
       "withdrawal": "positive_z",
-      "locking": false
+      "locking": false,
+      "front_gap_mm": 0.5
     },
     {
       "id": "right_drop_in",
@@ -113,30 +117,31 @@
       "support_z_mm": 3,
       "side_and_back_gap_mm": 0.5,
       "withdrawal": "positive_z",
-      "locking": false
+      "locking": false,
+      "front_gap_mm": 0.5
     }
   ],
   "external_parts": [],
   "compartment_clear_sizes_mm": {
     "left_front_each": [
       42.184,
-      37.25
+      35.5
     ],
     "left_back": [
       87.368,
-      37.25
+      35.5
     ],
     "right_front_first_three_each": [
       28.6106666667,
-      23.8333333333
+      22.666666666666668
     ],
     "right_front_slot": [
       18,
-      23.8333333333
+      22.666666666666668
     ],
     "right_middle_and_back_each": [
       54.916,
-      23.8333333333
+      22.666666666666668
     ]
   },
   "structure": {
@@ -155,13 +160,18 @@
     "outer_radius_mm": 5,
     "inner_radius_mm": 3,
     "rim_radius_mm": 0.8,
-    "bottom_chamfer_mm": 0.4
+    "bottom_chamfer_mm": 0.4,
+    "outer_front_wall_present": true,
+    "outer_front_wall_inner_y_mm": -24,
+    "outer_front_wall_outer_y_mm": -27,
+    "outer_front_clearance_mm": 0.5,
+    "rear_common_pocket_has_left_right_partition": false
   },
   "risks": [
     {
-      "id": "free_sliding",
+      "id": "no_vertical_lock",
       "severity": "advisory",
-      "description": "为保持外底座不分格，不增加内部分隔、前挡块或锁扣；内胆可沿前方余量滑移，请托底搬运。"
+      "description": "新增前壁约束内胆前滑，但仍可向上取出；搬运请托底。"
     },
     {
       "id": "double_floor",

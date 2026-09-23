@@ -94,7 +94,7 @@
       "source": "user"
     },
     "construction": {
-      "value": "三件套：一个不分格的一体式外托座，左右两组带底分格内胆可独立向上取出；无紧固件",
+      "value": "三件套：一体式外托座在两内胆前方补齐阶梯外壁，后部共用腔无左右分格；左右带底分格内胆独立向上取出，无紧固件",
       "source": "user"
     },
     "manufacturing_method": {
@@ -115,7 +115,7 @@
     },
     "acceptance": {
       "value": [
-        "外托座单腔无分格，左右内胆独立可取出",
+        "后部内胆共用一腔，无左右隔板；补齐阶梯前外壁，两内胆独立可取出",
         "左3格、右8格，前部一个连通浅托盘",
         "整体220×120×145 mm，左右最高点90/145 mm，斜口15°",
         "三件分别为有效连通实体，无装配穿透",
@@ -145,7 +145,8 @@
     "nesting_clearance_mm": {
       "value": {
         "side_and_back": 0.5,
-        "between_inserts": 0.8
+        "between_inserts": 0.8,
+        "front": 0.5
       },
       "source": "default"
     },
@@ -156,6 +157,18 @@
     "removable_reference": {
       "value": "product/references/uploads/20260922T140517974Z-1-mark.png",
       "source": "user"
+    },
+    "front_outer_wall": {
+      "value": "按20260923标记补齐两内胆前方阶梯外壁，与外托座连成一件；后部容纳两内胆的腔体不加左右隔板。",
+      "source": "user"
+    },
+    "front_wall_reference": {
+      "value": "product/references/uploads/20260923T105511576Z-1-mark.png",
+      "source": "user"
+    },
+    "insert_depth_mm": {
+      "value": 80,
+      "source": "default"
     }
   },
   "open_questions": []

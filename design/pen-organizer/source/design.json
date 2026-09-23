@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "buildNumber": 8,
-  "sourceHash": "1294503c941aef99ad788333f684761e5d1f969a8016c85bc9ea2affba545573",
+  "buildNumber": 14,
+  "sourceHash": "dbf175e1cbba801c594e38043189c2b609c0d5abf81b8bf77537e20fa874dfeb",
   "units": "mm",
   "coordinateFrame": "replicator-world-z-up",
   "targets": [
@@ -14,7 +14,7 @@
           "target": "organizer",
           "order": 0,
           "path": "design/pen-organizer/source/parts/organizer/000-organizer.py",
-          "sha256": "bb81b5051e535d0eb8179e2e893faf8329699db9f7aace2a329d3b202d566bce"
+          "sha256": "1c86c750820d7f22c616a241b288ff739dc91bee96937b3660addcdfc3bdacdf"
         }
       ],
       "dependencies": []
@@ -52,9 +52,9 @@
     {
       "id": "organizer",
       "target": "organizer",
-      "label": "整体无隔断外托座",
+      "label": "阶梯包围外托座",
       "kind": "generated",
-      "shapeHash": "6dae9015177cb0b444b33abff511fb9e692fc71092d945cb914af6b9794768b6",
+      "shapeHash": "6cbc83e232042a5c5138ee6aec263d7a6c7bd7857b2e1a4d37e12b3f5b736655",
       "transform": {
         "positionMm": [
           0,
@@ -80,11 +80,11 @@
       "target": "left_insert",
       "label": "左侧三格内胆",
       "kind": "generated",
-      "shapeHash": "daa71d10c0829b398597360b6eaf80d578f8f2ee9e69f75181b477126baf34cc",
+      "shapeHash": "0a87436594ae03e15bc0cd4250506875c817b0f5d77cdf90af764e8329e6315c",
       "transform": {
         "positionMm": [
           -59.816,
-          14.75,
+          16.5,
           3
         ],
         "rotationDeg": [
@@ -106,11 +106,11 @@
       "target": "right_insert",
       "label": "右侧八格内胆",
       "kind": "generated",
-      "shapeHash": "6def53ec2855ccd7e42591944d46d9d025136a4f4a8b668123ea6a95e327ad08",
+      "shapeHash": "3cc8043ac83d63406846e3a421571445ea731d4d45bfc46248a0f0ed57bbfaca",
       "transform": {
         "positionMm": [
           47.084,
-          14.75,
+          16.5,
           3
         ],
         "rotationDeg": [
@@ -130,7 +130,7 @@
   ],
   "assets": [],
   "fits": [],
-  "updatedAt": "2026-09-23T03:20:29.483Z",
+  "updatedAt": "2026-09-23T11:00:53.346Z",
   "parameters": {
     "organizer": {
       "organizer_width": 220,
@@ -149,11 +149,12 @@
       "organizer_forward_slope_deg": 15,
       "organizer_grip_exposure": 12,
       "organizer_side_clearance": 0.5,
-      "organizer_insert_gap": 0.8
+      "organizer_insert_gap": 0.8,
+      "organizer_front_clearance": 0.5
     },
     "left_insert": {
       "left_insert_width": 93.368,
-      "left_insert_depth": 83.5,
+      "left_insert_depth": 80,
       "left_insert_height": 87,
       "left_insert_wall": 3,
       "left_insert_floor": 3,
@@ -167,7 +168,7 @@
     },
     "right_insert": {
       "right_insert_width": 118.832,
-      "right_insert_depth": 83.5,
+      "right_insert_depth": 80,
       "right_insert_height": 142,
       "right_insert_wall": 3,
       "right_insert_floor": 3,

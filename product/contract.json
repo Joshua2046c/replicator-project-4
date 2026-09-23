@@ -2,19 +2,19 @@
   "version": 2,
   "artifact_level": "assembly",
   "deliverable_intent": "printable_part",
-  "summary": "三件式15°斜口桌面笔筒：单腔外托座与两个可独立向上取出的分格内胆。整体220×120×145 mm。",
+  "summary": "三件式15°斜口笔筒，补齐外托座阶梯前壁；后部共用腔无左右分隔，两内胆可独立取出，前方30 mm浅托盘。220×120×145 mm。",
   "required_interfaces": [
     {
       "id": "left_drop_in",
       "kind": "internal_fit",
-      "description": "内胆由外底座z=3平面承托、侧后0.5 mm间隙，无锁止，可向上取出。",
+      "description": "内胆由外托座z=3承托，前后及外侧间隙0.5 mm，无向上锁止，可独立上提。",
       "source": "user_requested",
       "required": true
     },
     {
       "id": "right_drop_in",
       "kind": "internal_fit",
-      "description": "内胆由外底座z=3平面承托、侧后0.5 mm间隙，无锁止，可向上取出。",
+      "description": "内胆由外托座z=3承托，前后及外侧间隙0.5 mm，无向上锁止，可独立上提。",
       "source": "user_requested",
       "required": true
     }
@@ -37,6 +37,12 @@
       "source": "user_requested",
       "description": "圈定左右分格体，要求外底座一体不分格、两内胆可取出。",
       "path": "product/references/uploads/20260922T140517974Z-1-mark.png"
+    },
+    {
+      "id": "user_front_wall_reference",
+      "source": "user_requested",
+      "description": "标记内胆前方，要求补上外壁。",
+      "path": "product/references/uploads/20260923T105511576Z-1-mark.png"
     }
   ],
   "assembly_story": {
@@ -53,7 +59,7 @@
       {
         "role": "desktop_pen_organizer",
         "design_id": "pen-organizer",
-        "description": "无隔断外托座＋左三格内胆＋右八格内胆",
+        "description": "阶梯前壁整体外托座＋左三格内胆＋右八格内胆",
         "delivery_target": "printable_part",
         "required_formats": [
           "step"
@@ -65,7 +71,8 @@
         "reference_ids": [
           "user_style_reference",
           "user_slope_reference",
-          "user_removable_reference"
+          "user_removable_reference",
+          "user_front_wall_reference"
         ]
       }
     ]
