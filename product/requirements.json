@@ -63,13 +63,13 @@
       "value": {
         "clear_depth_mm": 30,
         "rim_top_height_mm": 15,
-        "compartments": 2
+        "compartments": 1
       },
       "source": "user"
     },
     "wall_thickness_mm": {
-      "value": 2.4,
-      "source": "user"
+      "value": 3,
+      "source": "default"
     },
     "floor_thickness_mm": {
       "value": 3,
@@ -94,8 +94,8 @@
       "source": "user"
     },
     "construction": {
-      "value": "一体式、所有格封底、平底，无独立紧固件及电子部件",
-      "source": "default"
+      "value": "三件套：一个不分格的一体式外托座，左右两组带底分格内胆可独立向上取出；无紧固件",
+      "source": "user"
     },
     "manufacturing_method": {
       "value": "fdm",
@@ -115,13 +115,14 @@
     },
     "acceptance": {
       "value": [
-        "保留参考图阶梯式轮廓",
-        "11个收纳格及2个浅托盘格",
-        "CAD包络和壁底厚符合默认目标",
-        "无设计锐角、底面连续",
-        "CAD有效实体及主要尺寸可调整",
+        "外托座单腔无分格，左右内胆独立可取出",
+        "左3格、右8格，前部一个连通浅托盘",
+        "整体220×120×145 mm，左右最高点90/145 mm，斜口15°",
+        "三件分别为有效连通实体，无装配穿透",
+        "各件3 mm封底与3 mm标称直壁，保留口沿R0.8",
+        "最窄格不小于12 mm，左宽格不小于70×25 mm",
         "STEP与最终检查模型一致",
-        "实物稳定性及收纳手感需样件验证"
+        "打印后的松紧、稳定性及手感待样件验证"
       ],
       "source": "default"
     },
@@ -134,8 +135,27 @@
       "source": "user"
     },
     "slope_implementation": {
-      "value": "相对水平面，左右深格口沿及隔板分别朝前(-Y、托盘方向)降低，保留55 mm左右高低差；90/145 mm为圆滑后最高点；托盘不变。",
+      "value": "左右内胆斜口朝前15°，装配最高点90/145 mm；外托座高低侧壁低约12 mm，前部单腔托盘保持水平。",
       "source": "default"
+    },
+    "wall_thickening_permission": {
+      "value": "用户允许适当增加壁厚，采用3 mm外壁与隔板",
+      "source": "user"
+    },
+    "nesting_clearance_mm": {
+      "value": {
+        "side_and_back": 0.5,
+        "between_inserts": 0.8
+      },
+      "source": "default"
+    },
+    "insert_grip_exposure_mm": {
+      "value": 12,
+      "source": "default"
+    },
+    "removable_reference": {
+      "value": "product/references/uploads/20260922T140517974Z-1-mark.png",
+      "source": "user"
     }
   },
   "open_questions": []

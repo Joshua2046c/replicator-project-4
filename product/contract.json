@@ -1,9 +1,24 @@
 {
   "version": 2,
-  "artifact_level": "standalone_part",
+  "artifact_level": "assembly",
   "deliverable_intent": "printable_part",
-  "summary": "参考用户图片的一体式阶梯多格桌面笔筒，左低右高，前置浅托盘；默认220×120×145 mm，最终CAD交付STEP。",
-  "required_interfaces": [],
+  "summary": "三件式15°斜口桌面笔筒：单腔外托座与两个可独立向上取出的分格内胆。整体220×120×145 mm。",
+  "required_interfaces": [
+    {
+      "id": "left_drop_in",
+      "kind": "internal_fit",
+      "description": "内胆由外底座z=3平面承托、侧后0.5 mm间隙，无锁止，可向上取出。",
+      "source": "user_requested",
+      "required": true
+    },
+    {
+      "id": "right_drop_in",
+      "kind": "internal_fit",
+      "description": "内胆由外底座z=3平面承托、侧后0.5 mm间隙，无锁止，可向上取出。",
+      "source": "user_requested",
+      "required": true
+    }
+  ],
   "external_references": [
     {
       "id": "user_style_reference",
@@ -16,15 +31,20 @@
       "source": "user_requested",
       "description": "用户圈定左右深格顶部，要求朝前约15°斜切。",
       "path": "product/references/uploads/20260922T135609685Z-1-mark.png"
+    },
+    {
+      "id": "user_removable_reference",
+      "source": "user_requested",
+      "description": "圈定左右分格体，要求外底座一体不分格、两内胆可取出。",
+      "path": "product/references/uploads/20260922T140517974Z-1-mark.png"
     }
   ],
   "assembly_story": {
-    "installation": "一体式笔筒底面直接放置桌面，无装配或固定五金。",
-    "maintenance": "从顶部清理收纳格和前方托盘。",
+    "installation": "外托座放在桌面，左右内胆分别从上方放入后侧；无需紧固件。",
+    "maintenance": "抓住露出的斜口边缘分别向上提起，取出后清理整体外托座。",
     "user_access": [
-      "左侧低区收纳格",
-      "右侧高区收纳格",
-      "前方浅托盘"
+      "左右可取出内胆",
+      "前方连通浅托盘"
     ]
   },
   "cad": {
@@ -33,15 +53,19 @@
       {
         "role": "desktop_pen_organizer",
         "design_id": "pen-organizer",
-        "description": "一体式圆角阶梯分格桌面笔筒",
+        "description": "无隔断外托座＋左三格内胆＋右八格内胆",
         "delivery_target": "printable_part",
         "required_formats": [
           "step"
         ],
-        "interface_ids": [],
+        "interface_ids": [
+          "left_drop_in",
+          "right_drop_in"
+        ],
         "reference_ids": [
           "user_style_reference",
-          "user_slope_reference"
+          "user_slope_reference",
+          "user_removable_reference"
         ]
       }
     ]

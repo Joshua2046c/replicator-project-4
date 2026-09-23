@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "buildNumber": 2,
-  "sourceHash": "c018b22dccd7d36bcb74d08ccf243eb52dfbba1ea356bc74e89f20a581a46c60",
+  "buildNumber": 8,
+  "sourceHash": "1294503c941aef99ad788333f684761e5d1f969a8016c85bc9ea2affba545573",
   "units": "mm",
   "coordinateFrame": "replicator-world-z-up",
   "targets": [
@@ -14,7 +14,35 @@
           "target": "organizer",
           "order": 0,
           "path": "design/pen-organizer/source/parts/organizer/000-organizer.py",
-          "sha256": "1a7a9d6419f77a873388200a3118faad253f32aaa6df0bdb960095e923624fab"
+          "sha256": "bb81b5051e535d0eb8179e2e893faf8329699db9f7aace2a329d3b202d566bce"
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "left_insert",
+      "label": "left_insert",
+      "cells": [
+        {
+          "id": "left_insert",
+          "target": "left_insert",
+          "order": 0,
+          "path": "design/pen-organizer/source/parts/left_insert/000-left_insert.py",
+          "sha256": "825e07e360a8a31c7bdeb1478052386f5a1c883a54dcd0421f68ad2aa65d9d20"
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "right_insert",
+      "label": "right_insert",
+      "cells": [
+        {
+          "id": "right_insert",
+          "target": "right_insert",
+          "order": 0,
+          "path": "design/pen-organizer/source/parts/right_insert/000-right_insert.py",
+          "sha256": "67d40705cfd29225434d6ba20815e41ad7a1e8cc5373eeed652ad6038181776a"
         }
       ],
       "dependencies": []
@@ -24,9 +52,9 @@
     {
       "id": "organizer",
       "target": "organizer",
-      "label": "阶梯分格笔筒",
+      "label": "整体无隔断外托座",
       "kind": "generated",
-      "shapeHash": "874eb5a9b60967a55c3a642938490820faf8eb8358f71b4734792208678cdd27",
+      "shapeHash": "6dae9015177cb0b444b33abff511fb9e692fc71092d945cb914af6b9794768b6",
       "transform": {
         "positionMm": [
           0,
@@ -46,18 +74,70 @@
         ]
       },
       "datums": []
+    },
+    {
+      "id": "left_insert",
+      "target": "left_insert",
+      "label": "左侧三格内胆",
+      "kind": "generated",
+      "shapeHash": "daa71d10c0829b398597360b6eaf80d578f8f2ee9e69f75181b477126baf34cc",
+      "transform": {
+        "positionMm": [
+          -59.816,
+          14.75,
+          3
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "right_insert",
+      "target": "right_insert",
+      "label": "右侧八格内胆",
+      "kind": "generated",
+      "shapeHash": "6def53ec2855ccd7e42591944d46d9d025136a4f4a8b668123ea6a95e327ad08",
+      "transform": {
+        "positionMm": [
+          47.084,
+          14.75,
+          3
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
     }
   ],
   "assets": [],
   "fits": [],
-  "updatedAt": "2026-09-22T13:58:47.299Z",
+  "updatedAt": "2026-09-23T03:20:29.483Z",
   "parameters": {
     "organizer": {
       "organizer_width": 220,
       "organizer_depth": 120,
       "organizer_height": 145,
       "organizer_left_height": 90,
-      "organizer_wall": 2.4,
+      "organizer_wall": 3,
       "organizer_floor": 3,
       "organizer_left_fraction": 0.44,
       "organizer_tray_clear_depth": 30,
@@ -66,14 +146,41 @@
       "organizer_inner_radius": 3,
       "organizer_rim_radius": 0.8,
       "organizer_bottom_chamfer": 0.4,
+      "organizer_forward_slope_deg": 15,
+      "organizer_grip_exposure": 12,
+      "organizer_side_clearance": 0.5,
+      "organizer_insert_gap": 0.8
+    },
+    "left_insert": {
+      "left_insert_width": 93.368,
+      "left_insert_depth": 83.5,
+      "left_insert_height": 87,
+      "left_insert_wall": 3,
+      "left_insert_floor": 3,
+      "left_insert_outer_radius": 5,
+      "left_insert_inner_radius": 3,
+      "left_insert_rim_radius": 0.8,
+      "left_insert_bottom_chamfer": 0.4,
+      "left_insert_forward_slope_deg": 15,
       "organizer_left_front_row_fraction": 0.5,
-      "organizer_left_front_split": 0.5,
+      "organizer_left_front_split": 0.5
+    },
+    "right_insert": {
+      "right_insert_width": 118.832,
+      "right_insert_depth": 83.5,
+      "right_insert_height": 142,
+      "right_insert_wall": 3,
+      "right_insert_floor": 3,
+      "right_insert_outer_radius": 5,
+      "right_insert_inner_radius": 3,
+      "right_insert_rim_radius": 0.8,
+      "right_insert_bottom_chamfer": 0.4,
+      "right_insert_forward_slope_deg": 15,
       "organizer_right_front_row_fraction": 0.3333333333333333,
       "organizer_right_middle_remaining_fraction": 0.5,
       "organizer_right_middle_split": 0.5,
       "organizer_right_back_split": 0.5,
-      "organizer_slot_width": 18,
-      "organizer_forward_slope_deg": 15
+      "organizer_slot_width": 18
     }
   }
 }

@@ -1,357 +1,177 @@
 {
   "schema_version": 1,
   "status": "ready",
-  "requirements_digest": "4d244a34fec58830727d04cd525fc9780c52033950cdbfddcdcba15dda9484b4",
+  "requirements_digest": "4f867034e41f7f4003395186effe5e0f370fe5568c4cc669668d34f5eb0270ae",
   "units": "mm",
   "coordinate_frame": {
-    "origin": "底面中心",
-    "x": "向右",
-    "y": "向后",
-    "z": "向上"
+    "origin": "外托座底面中心",
+    "x": "右",
+    "y": "后",
+    "z": "上"
   },
   "envelope_mm": {
-    "width": 220.0,
-    "depth": 120.0,
+    "width": 220,
+    "depth": 120,
     "height": 145
   },
-  "structure": {
-    "quantity": 1,
-    "object_id": "organizer",
-    "construction": "single_fused_solid",
-    "wall_thickness_mm": 2.4,
-    "floor_thickness_mm": 3,
-    "outer_plan_radius_mm": 5,
-    "inner_plan_radius_mm": 3,
-    "rim_fillet_radius_mm": 0.8,
-    "bottom_edge_chamfer_mm": 0.4,
-    "tier_split_center_x_mm": -12.768,
-    "rear_outer_front_y_mm": -27.6,
-    "left_top_z_mm": 90,
-    "right_top_z_mm": 145,
-    "tray_rim_z_mm": 15,
-    "top_slope": {
-      "angle_deg": 15,
-      "direction": "front_minus_y",
-      "reference": "horizontal XY",
-      "rear_plane_y_mm": 60,
-      "fillet_crown_compensation_mm": 0.24258029827296462,
-      "plane_equation": "z=zone_max_height + crown_compensation + tan(15deg)*(y-60)",
-      "affected_zones": [
-        "left",
-        "right"
-      ],
-      "tray_unchanged": true
-    }
-  },
-  "compartments": [
+  "parts": [
     {
-      "id": "L_front_1",
-      "zone": "left",
-      "clear_bounds_mm": {
-        "x_min": -107.6,
-        "x_max": -61.984,
-        "y_min": -25.2,
-        "y_max": 15.0
-      },
-      "clear_size_mm": [
-        45.616,
-        40.2
+      "object_id": "organizer",
+      "bbox_size_mm": [
+        220,
+        120,
+        133
       ],
-      "floor_z_mm": 3,
-      "plan_corner_radius_mm": 3,
-      "zone_max_height_mm": 90,
-      "rim_plane_z_range_mm": [
-        67.413309,
-        78.184867
+      "position_mm": [
+        0,
+        0,
+        0
       ],
-      "rim_note": "斜面方程在净腔体Y边界处的理论高度；圆角边缘略低于理论面。"
+      "cavity_clear_mm": [
+        214,
+        114
+      ],
+      "floor_mm": 3,
+      "wall_mm": 3,
+      "compartments": 1
     },
     {
-      "id": "L_front_2",
-      "zone": "left",
-      "clear_bounds_mm": {
-        "x_min": -59.584,
-        "x_max": -13.968,
-        "y_min": -25.2,
-        "y_max": 15.0
-      },
-      "clear_size_mm": [
-        45.616,
-        40.2
+      "object_id": "left_insert",
+      "bbox_size_mm": [
+        93.368,
+        83.5,
+        87
       ],
-      "floor_z_mm": 3,
-      "plan_corner_radius_mm": 3,
-      "zone_max_height_mm": 90,
-      "rim_plane_z_range_mm": [
-        67.413309,
-        78.184867
+      "position_mm": [
+        -59.816,
+        14.75,
+        3
       ],
-      "rim_note": "斜面方程在净腔体Y边界处的理论高度；圆角边缘略低于理论面。"
+      "floor_mm": 3,
+      "wall_mm": 3,
+      "compartments": 3
     },
     {
-      "id": "L_back",
-      "zone": "left",
-      "clear_bounds_mm": {
-        "x_min": -107.6,
-        "x_max": -13.968,
-        "y_min": 17.4,
-        "y_max": 57.6
-      },
-      "clear_size_mm": [
-        93.632,
-        40.2
+      "object_id": "right_insert",
+      "bbox_size_mm": [
+        118.832,
+        83.5,
+        142
       ],
-      "floor_z_mm": 3,
-      "plan_corner_radius_mm": 3,
-      "zone_max_height_mm": 90,
-      "rim_plane_z_range_mm": [
-        78.827945,
-        89.599502
+      "position_mm": [
+        47.084,
+        14.75,
+        3
       ],
-      "rim_note": "斜面方程在净腔体Y边界处的理论高度；圆角边缘略低于理论面。"
-    },
-    {
-      "id": "R_middle_1",
-      "zone": "right",
-      "clear_bounds_mm": {
-        "x_min": -11.568,
-        "x_max": 46.816,
-        "y_min": 3.2,
-        "y_max": 29.2
-      },
-      "clear_size_mm": [
-        58.384,
-        26.0
-      ],
-      "floor_z_mm": 3,
-      "plan_corner_radius_mm": 3,
-      "zone_max_height_mm": 145,
-      "rim_plane_z_range_mm": [
-        130.023066,
-        136.989745
-      ],
-      "rim_note": "斜面方程在净腔体Y边界处的理论高度；圆角边缘略低于理论面。"
-    },
-    {
-      "id": "R_middle_2",
-      "zone": "right",
-      "clear_bounds_mm": {
-        "x_min": 49.216,
-        "x_max": 107.6,
-        "y_min": 3.2,
-        "y_max": 29.2
-      },
-      "clear_size_mm": [
-        58.384,
-        26.0
-      ],
-      "floor_z_mm": 3,
-      "plan_corner_radius_mm": 3,
-      "zone_max_height_mm": 145,
-      "rim_plane_z_range_mm": [
-        130.023066,
-        136.989745
-      ],
-      "rim_note": "斜面方程在净腔体Y边界处的理论高度；圆角边缘略低于理论面。"
-    },
-    {
-      "id": "R_back_1",
-      "zone": "right",
-      "clear_bounds_mm": {
-        "x_min": -11.568,
-        "x_max": 46.816,
-        "y_min": 31.6,
-        "y_max": 57.6
-      },
-      "clear_size_mm": [
-        58.384,
-        26.0
-      ],
-      "floor_z_mm": 3,
-      "plan_corner_radius_mm": 3,
-      "zone_max_height_mm": 145,
-      "rim_plane_z_range_mm": [
-        137.632823,
-        144.599502
-      ],
-      "rim_note": "斜面方程在净腔体Y边界处的理论高度；圆角边缘略低于理论面。"
-    },
-    {
-      "id": "R_back_2",
-      "zone": "right",
-      "clear_bounds_mm": {
-        "x_min": 49.216,
-        "x_max": 107.6,
-        "y_min": 31.6,
-        "y_max": 57.6
-      },
-      "clear_size_mm": [
-        58.384,
-        26.0
-      ],
-      "floor_z_mm": 3,
-      "plan_corner_radius_mm": 3,
-      "zone_max_height_mm": 145,
-      "rim_plane_z_range_mm": [
-        137.632823,
-        144.599502
-      ],
-      "rim_note": "斜面方程在净腔体Y边界处的理论高度；圆角边缘略低于理论面。"
-    },
-    {
-      "id": "R_front_1",
-      "zone": "right",
-      "clear_bounds_mm": {
-        "x_min": -11.568,
-        "x_max": 19.754667,
-        "y_min": -25.2,
-        "y_max": 0.8
-      },
-      "clear_size_mm": [
-        31.322667,
-        26.0
-      ],
-      "floor_z_mm": 3,
-      "plan_corner_radius_mm": 3,
-      "zone_max_height_mm": 145,
-      "rim_plane_z_range_mm": [
-        122.413309,
-        129.379988
-      ],
-      "rim_note": "斜面方程在净腔体Y边界处的理论高度；圆角边缘略低于理论面。"
-    },
-    {
-      "id": "R_front_2",
-      "zone": "right",
-      "clear_bounds_mm": {
-        "x_min": 22.154667,
-        "x_max": 53.477333,
-        "y_min": -25.2,
-        "y_max": 0.8
-      },
-      "clear_size_mm": [
-        31.322667,
-        26.0
-      ],
-      "floor_z_mm": 3,
-      "plan_corner_radius_mm": 3,
-      "zone_max_height_mm": 145,
-      "rim_plane_z_range_mm": [
-        122.413309,
-        129.379988
-      ],
-      "rim_note": "斜面方程在净腔体Y边界处的理论高度；圆角边缘略低于理论面。"
-    },
-    {
-      "id": "R_front_3",
-      "zone": "right",
-      "clear_bounds_mm": {
-        "x_min": 55.877333,
-        "x_max": 87.2,
-        "y_min": -25.2,
-        "y_max": 0.8
-      },
-      "clear_size_mm": [
-        31.322667,
-        26.0
-      ],
-      "floor_z_mm": 3,
-      "plan_corner_radius_mm": 3,
-      "zone_max_height_mm": 145,
-      "rim_plane_z_range_mm": [
-        122.413309,
-        129.379988
-      ],
-      "rim_note": "斜面方程在净腔体Y边界处的理论高度；圆角边缘略低于理论面。"
-    },
-    {
-      "id": "R_front_slot",
-      "zone": "right",
-      "clear_bounds_mm": {
-        "x_min": 89.6,
-        "x_max": 107.6,
-        "y_min": -25.2,
-        "y_max": 0.8
-      },
-      "clear_size_mm": [
-        18,
-        26.0
-      ],
-      "floor_z_mm": 3,
-      "plan_corner_radius_mm": 3,
-      "zone_max_height_mm": 145,
-      "rim_plane_z_range_mm": [
-        122.413309,
-        129.379988
-      ],
-      "rim_note": "斜面方程在净腔体Y边界处的理论高度；圆角边缘略低于理论面。"
-    },
-    {
-      "id": "tray_left",
-      "zone": "tray",
-      "clear_bounds_mm": {
-        "x_min": -107.6,
-        "x_max": -13.968,
-        "y_min": -57.6,
-        "y_max": -27.6
-      },
-      "clear_size_mm": [
-        93.632,
-        30
-      ],
-      "floor_z_mm": 3,
-      "rim_z_mm": 15,
-      "plan_corner_radius_mm": 3
-    },
-    {
-      "id": "tray_right",
-      "zone": "tray",
-      "clear_bounds_mm": {
-        "x_min": -11.568,
-        "x_max": 107.6,
-        "y_min": -57.6,
-        "y_max": -27.6
-      },
-      "clear_size_mm": [
-        119.168,
-        30
-      ],
-      "floor_z_mm": 3,
-      "rim_z_mm": 15,
-      "plan_corner_radius_mm": 3
+      "floor_mm": 3,
+      "wall_mm": 3,
+      "compartments": 8
     }
   ],
-  "implementation_defaults": {
-    "source": "default",
-    "left_row_clear_depths_equal": true,
-    "right_row_clear_depths_equal": true,
-    "left_front_widths_equal": true,
-    "right_middle_and_back_widths_equal": true,
-    "right_front_first_three_widths_equal": true,
-    "right_front_slot_clear_width_mm": 18,
-    "bottom_edge_chamfer_mm": 0.4
-  },
-  "interfaces": [],
-  "connections": [],
+  "interfaces": [
+    {
+      "id": "left_drop_in",
+      "a": "organizer",
+      "b": "left_insert",
+      "implementation": "free",
+      "kind": "gravity_drop_in",
+      "support_z_mm": 3,
+      "side_and_back_gap_mm": 0.5,
+      "withdrawal": "positive_z",
+      "locking": false
+    },
+    {
+      "id": "right_drop_in",
+      "a": "organizer",
+      "b": "right_insert",
+      "implementation": "free",
+      "kind": "gravity_drop_in",
+      "support_z_mm": 3,
+      "side_and_back_gap_mm": 0.5,
+      "withdrawal": "positive_z",
+      "locking": false
+    }
+  ],
+  "connections": [
+    {
+      "id": "left_drop_in",
+      "a": "organizer",
+      "b": "left_insert",
+      "implementation": "free",
+      "kind": "gravity_drop_in",
+      "support_z_mm": 3,
+      "side_and_back_gap_mm": 0.5,
+      "withdrawal": "positive_z",
+      "locking": false
+    },
+    {
+      "id": "right_drop_in",
+      "a": "organizer",
+      "b": "right_insert",
+      "implementation": "free",
+      "kind": "gravity_drop_in",
+      "support_z_mm": 3,
+      "side_and_back_gap_mm": 0.5,
+      "withdrawal": "positive_z",
+      "locking": false
+    }
+  ],
   "external_parts": [],
-  "manufacturing": {
-    "method": "fdm",
-    "material": "PLA",
-    "orientation": "z=0底面朝下，开口朝上",
-    "supports": "几何避免大跨度顶盖；实际是否需要支撑由切片预览确认。",
-    "printer_profile": "not_selected",
-    "surface_texture": "不在实体中建模颗粒"
+  "compartment_clear_sizes_mm": {
+    "left_front_each": [
+      42.184,
+      37.25
+    ],
+    "left_back": [
+      87.368,
+      37.25
+    ],
+    "right_front_first_three_each": [
+      28.6106666667,
+      23.8333333333
+    ],
+    "right_front_slot": [
+      18,
+      23.8333333333
+    ],
+    "right_middle_and_back_each": [
+      54.916,
+      23.8333333333
+    ]
+  },
+  "structure": {
+    "outer_part_has_partitions": false,
+    "insert_wall_mm": 3,
+    "insert_floor_mm": 3,
+    "base_floor_mm": 3,
+    "assembled_insert_cavity_floor_z_mm": 6,
+    "insert_gap_mm": 0.8,
+    "outer_side_and_back_clearance_mm": 0.5,
+    "front_free_tray_depth_mm": 30,
+    "outer_rear_wall_start_y_mm": -27,
+    "outer_back_step_x_mm": -12.732,
+    "grip_exposure_mm": 12,
+    "slope_deg": 15,
+    "outer_radius_mm": 5,
+    "inner_radius_mm": 3,
+    "rim_radius_mm": 0.8,
+    "bottom_chamfer_mm": 0.4
   },
   "risks": [
     {
-      "id": "physical_test",
+      "id": "free_sliding",
       "severity": "advisory",
-      "description": "未打印；实际收纳适配和装满文具后的稳定性待样件检查。"
+      "description": "为保持外底座不分格，不增加内部分隔、前挡块或锁扣；内胆可沿前方余量滑移，请托底搬运。"
     },
     {
-      "id": "small_corner_wall",
+      "id": "double_floor",
       "severity": "advisory",
-      "description": "平面R5外角/R3内角使圆角局部厚于直壁；2.4 mm是直壁标称值，口沿R0.8处有圆滑收薄。"
+      "description": "内胆自带3 mm底板，置于3 mm外底座上，笔格内底整体升至z=6。"
+    },
+    {
+      "id": "printing_fit",
+      "severity": "advisory",
+      "description": "实际打印后检查侧隙和翘曲；几何验证不代替样件。"
     }
   ],
   "unresolved_items": []

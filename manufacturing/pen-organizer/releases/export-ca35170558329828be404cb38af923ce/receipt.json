@@ -1,0 +1,126 @@
+{
+  "designId": "pen-organizer",
+  "buildNumber": 8,
+  "sourceHash": "1294503c941aef99ad788333f684761e5d1f969a8016c85bc9ea2affba545573",
+  "schemaVersion": 2,
+  "exportId": "export-ca35170558329828be404cb38af923ce",
+  "generatedAt": "2026-09-23T03:20:29.483Z",
+  "designSha256": "da0b0e3e47dd060f8575f023599540f85a14ae61ab6dd95ad4bd2ebfbe866288",
+  "role": "desktop_pen_organizer",
+  "stateHash": "58a2c849e99db48f8332edac1e5cf8a78d94acfacec4c459ae076ed33a114a70",
+  "stateManifest": {
+    "schemaVersion": 2,
+    "designId": "pen-organizer",
+    "role": "desktop_pen_organizer",
+    "design": {
+      "buildNumber": 8,
+      "sourceHash": "1294503c941aef99ad788333f684761e5d1f969a8016c85bc9ea2affba545573",
+      "designSha256": "6685247b12d8e542a2b097cf595f66cc0ee6914c130dc71f636d50cb11af4005",
+      "manifestSha256": "a0f019d84820681958e97a483b3d778ef4dababdbe6bd8cd8e32c89279e62508",
+      "stepSha256": "ba39a10735d2efbd797ec07df488a45d408c226acf054450ae800b38021306fc",
+      "pcbReleases": []
+    },
+    "brief": {
+      "path": "design/pen-organizer/README.md",
+      "sha256": "d4a6d34ae3548e9612106b6b31a6d36527c9bc55963213c1065de6c593068d1e"
+    },
+    "requirement": {
+      "artifactContractPath": "product/contract.json",
+      "artifactContractSha256": "81b0e1899da420d74927132092ec2cd516215481b850bc4d5af2dd3c0910a434",
+      "designRequirementSha256": "29e50dff29209901b139c8a059380ebec37e70005778de2009242e4ddb17bb71",
+      "inputs": [
+        {
+          "role": "external-reference",
+          "id": "user_removable_reference",
+          "path": "product/references/uploads/20260922T140517974Z-1-mark.png",
+          "sha256": "e2618f69edbcc2fa6cabd30d1df7418dc5e3fb399c4dfb43f4c3743f6bb0eda5",
+          "sizeBytes": 302233
+        },
+        {
+          "role": "external-reference",
+          "id": "user_slope_reference",
+          "path": "product/references/uploads/20260922T135609685Z-1-mark.png",
+          "sha256": "76c1444cc774628043210a6da1415ea3420250077724c52e74e06146116aa079",
+          "sizeBytes": 407666
+        },
+        {
+          "role": "external-reference",
+          "id": "user_style_reference",
+          "path": "product/references/uploads/20260922T130920718Z-1-image.png",
+          "sha256": "a8b6390f0a9450276f582517800f687a709e3aa068ba1f61c03a97b33e43b91a",
+          "sizeBytes": 289684
+        }
+      ]
+    },
+    "delivery": {
+      "target": "printable_part",
+      "formats": [
+        "step"
+      ]
+    },
+    "stateHash": "58a2c849e99db48f8332edac1e5cf8a78d94acfacec4c459ae076ed33a114a70"
+  },
+  "buildArtifacts": {
+    "manifestSha256": "a0f019d84820681958e97a483b3d778ef4dababdbe6bd8cd8e32c89279e62508",
+    "stepSha256": "ba39a10735d2efbd797ec07df488a45d408c226acf054450ae800b38021306fc"
+  },
+  "exportAlgorithm": {
+    "version": 1,
+    "bootstrapSha256": "2bf557334c52ec5d092ce927635d10591a87b85e6c441c3f4aa3411ff2379a39"
+  },
+  "sourceHashes": {
+    "left_insert/left_insert": "825e07e360a8a31c7bdeb1478052386f5a1c883a54dcd0421f68ad2aa65d9d20",
+    "organizer/organizer": "bb81b5051e535d0eb8179e2e893faf8329699db9f7aace2a329d3b202d566bce",
+    "right_insert/right_insert": "67d40705cfd29225434d6ba20815e41ad7a1e8cc5373eeed652ad6038181776a"
+  },
+  "assetHashes": {},
+  "shapeHashes": {
+    "left_insert": "daa71d10c0829b398597360b6eaf80d578f8f2ee9e69f75181b477126baf34cc",
+    "organizer": "6dae9015177cb0b444b33abff511fb9e692fc71092d945cb914af6b9794768b6",
+    "right_insert": "6def53ec2855ccd7e42591944d46d9d025136a4f4a8b668123ea6a95e327ad08"
+  },
+  "runtime": {
+    "manifestHash": "db7eda9ca0f7599605893eccbedbf9d7a2eb682bb80418080536971a776aab33",
+    "pythonVersion": "3.12.13",
+    "build123dVersion": "0.10.0",
+    "ocpVersion": "7.8.1.1.post1",
+    "cadpyHash": "74f250de9b3dff3b5e0b94523625dd13c3710d3f81c487102225650971b064a6"
+  },
+  "artifacts": [
+    {
+      "path": "manufacturing/pen-organizer/releases/export-ca35170558329828be404cb38af923ce/model.step",
+      "role": "model/step",
+      "sha256": "ba39a10735d2efbd797ec07df488a45d408c226acf054450ae800b38021306fc",
+      "sizeBytes": 1631156
+    }
+  ],
+  "interference": {
+    "summary": "No interference across 3 object pairs.",
+    "counts": {
+      "objects": 3,
+      "pairs": 3,
+      "exact": 0,
+      "cached": 2,
+      "interference": 0,
+      "undeclared": 0,
+      "over_budget": 0,
+      "undetermined": 0
+    },
+    "overlaps": []
+  },
+  "authority": {
+    "version": 1,
+    "algorithm": "hmac-sha256",
+    "keyId": "f156d688624f9322eab29deb4bb6a2bd",
+    "projectId": "75a08078-ae95-44a9-a371-c0873e7d6696",
+    "receiptPath": "manufacturing/pen-organizer/releases/export-ca35170558329828be404cb38af923ce/receipt.json",
+    "payloadSha256": "147fe1657fa48da0a5e63bbf794bb7bb6ea7335b98215cb91bd50916ba15e4b3",
+    "mac": "da231a458cd6131e61b90cd948bf084b4d422d91d94e14882fd2f164409ca6e2"
+  },
+  "status": "reviewed",
+  "review": {
+    "reviewId": "review-8-e853fd86-039e-4f05-a0bd-b96c356b3244",
+    "path": ".work/builds/cad/pen-organizer/reviews/review-8-e853fd86-039e-4f05-a0bd-b96c356b3244/receipt.json",
+    "sha256": "f7de3e438059d981f7178210cc4804542769a21c123885a6edee7c2969f1e0f0"
+  }
+}

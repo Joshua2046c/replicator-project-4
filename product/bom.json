@@ -2,28 +2,54 @@
   "schema_version": 1,
   "status": "ready",
   "bom_ready": true,
-  "requirements_digest": "4d244a34fec58830727d04cd525fc9780c52033950cdbfddcdcba15dda9484b4",
+  "requirements_digest": "4f867034e41f7f4003395186effe5e0f370fe5568c4cc669668d34f5eb0270ae",
   "items": [
     {
       "id": "organizer",
-      "role": "mechanical_body",
-      "name": "一体式阶梯分格笔筒",
-      "description": "220×120×145 mm；左右深格顶面向前倾斜15°，圆滑后最高点左90 mm、右145 mm；11个深格及2个水平浅托盘；2.4 mm标称壁厚，3 mm底板；一体FDM PLA原型。",
+      "role": "mechanical_part",
+      "name": "无隔断整体外托座",
+      "description": "220×120 mm占地，前沿15 mm，后部左右支撑最高78/133 mm，3 mm壁及底；单一连通内腔214×114 mm。",
       "quantity": 1,
       "manufacturer": "Project custom",
-      "part_number": "pen-organizer-body-v1",
+      "part_number": "pen-organizer-organizer-nested-v1",
       "source": "default",
-      "selection_reason": "保留原定占地和最高高度，按用户标记修改顶部斜切；全部收纳格和底座融合为一个零件，无新增五金。",
-      "cad_relevance": "唯一CAD实体，完整分格坐标见product/constraints.json。",
-      "part_identity": "524928483eb1a165"
+      "selection_reason": "按用户要求改为可拆套层分件；自定义打印件，无外购五金。",
+      "cad_relevance": "organizer",
+      "part_identity": "c279bc31aff8528f"
+    },
+    {
+      "id": "left_insert",
+      "role": "mechanical_part",
+      "name": "左侧三格可取出内胆",
+      "description": "外包络93.368×83.5×87 mm，3 mm壁底，15°斜口；装配底部z=3，最高z=90。",
+      "quantity": 1,
+      "manufacturer": "Project custom",
+      "part_number": "pen-organizer-left_insert-nested-v1",
+      "source": "default",
+      "selection_reason": "按用户要求改为可拆套层分件；自定义打印件，无外购五金。",
+      "cad_relevance": "left_insert",
+      "part_identity": "a8149cc48eed7d9f"
+    },
+    {
+      "id": "right_insert",
+      "role": "mechanical_part",
+      "name": "右侧八格可取出内胆",
+      "description": "外包络118.832×83.5×142 mm，3 mm壁底，15°斜口，前右净宽18 mm；装配底部z=3，最高z=145。",
+      "quantity": 1,
+      "manufacturer": "Project custom",
+      "part_number": "pen-organizer-right_insert-nested-v1",
+      "source": "default",
+      "selection_reason": "按用户要求改为可拆套层分件；自定义打印件，无外购五金。",
+      "cad_relevance": "right_insert",
+      "part_identity": "aec17f1c6863582c"
     }
   ],
   "unresolved_items": [],
   "supply_risks": [
     {
-      "id": "prototype_validation",
+      "id": "fit_test",
       "severity": "advisory",
-      "description": "打印机、耗材品牌和工艺尚未指定；打印后的平整度、稳定性和手感需样件确认，不影响CAD结构定义。"
+      "description": "间隙为原型默认值，需实际打印验证。无锁止机构，移动整件请托住底座；内胆可向前滑动。"
     }
   ]
 }
