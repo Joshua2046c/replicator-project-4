@@ -1,8 +1,8 @@
 {
   "formatVersion": 4,
-  "name": "桌面笔筒",
-  "title": "模块化桌面收纳盒",
-  "summary": "收纳盒采用模块化分区设计，将不同大小的收纳格集中于统一底座，方便分类整理和取用",
+  "name": "模块化桌面收纳盒",
+  "title": "Modular Desktop Storage Box",
+  "summary": "This storage box features a modular compartment design. Slots of varying sizes are arranged on one shared base for easy sorting and access.",
   "license": "MIT",
   "authors": [
     {

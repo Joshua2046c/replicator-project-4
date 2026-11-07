@@ -1,9 +1,7 @@
 {
   "schemaVersion": 1,
-  "buildNumber": 15,
-  "sourceHash": "e276a2337bbf1f7f852f062a37f4b1b9beff9390d8f5c8413a6d83f776d89dde",
   "units": "mm",
-  "coordinateFrame": "replicator-world-z-up",
+  "coordinateFrame": "makit-world-z-up",
   "targets": [
     {
       "id": "organizer",
@@ -54,7 +52,7 @@
       "target": "organizer",
       "label": "圆弧斜坡外托座",
       "kind": "generated",
-      "shapeHash": "84596a67683542a9f03a029fa1c4c1c2936b09c9604812bd4f65672b590933b0",
+      "shapeHash": "255016185daeafe3275a5ef22236c454835599cf32d5981c2d97da88ddb62a8c",
       "transform": {
         "positionMm": [
           0,
@@ -80,7 +78,7 @@
       "target": "left_insert",
       "label": "左侧三格内胆",
       "kind": "generated",
-      "shapeHash": "0a87436594ae03e15bc0cd4250506875c817b0f5d77cdf90af764e8329e6315c",
+      "shapeHash": "3e03a778feb9915b41eeb235092cf94031aba9fbaa8de36569358062d6ec8350",
       "transform": {
         "positionMm": [
           -59.816,
@@ -106,7 +104,7 @@
       "target": "right_insert",
       "label": "右侧八格内胆",
       "kind": "generated",
-      "shapeHash": "3cc8043ac83d63406846e3a421571445ea731d4d45bfc46248a0f0ed57bbfaca",
+      "shapeHash": "382f8ea3961029c200b0a3259ca811429cb45d8fc5b47548656d91532daffd87",
       "transform": {
         "positionMm": [
           47.084,
@@ -130,7 +128,7 @@
   ],
   "assets": [],
   "fits": [],
-  "updatedAt": "2026-09-23T11:12:13.648Z",
+  "updatedAt": "2026-11-07T14:45:32.691Z",
   "parameters": {
     "organizer": {
       "organizer_width": 220,

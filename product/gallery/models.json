@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "models": [
+    {
+      "file": "models/pen-organizer.glb",
+      "design": "pen-organizer"
+    }
+  ]
+}
